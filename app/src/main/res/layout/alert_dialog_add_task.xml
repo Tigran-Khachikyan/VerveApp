@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_root_dms"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_alert_dialog"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/add_new_task"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/title"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/description"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/comment"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb_in_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="12dp"
+            android:text="@string/send_to_qa" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/submit" />
+    </LinearLayout>
+</FrameLayout>

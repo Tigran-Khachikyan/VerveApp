@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.vervetaskapp.ui.dashboard.DashboardFragment"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/view_project_details"
+            app:destination="@id/nav_project" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_project"
+        android:name="com.example.vervetaskapp.ui.project.ProjectFragment"
+        android:label="@string/Project"
+        tools:layout="@layout/fragment_project" >
+        <action
+            android:id="@+id/view_task_details"
+            app:destination="@id/nav_task" />
+        <argument
+            android:name="project"
+            app:argType="com.example.vervetaskapp.models.Project" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_task"
+        android:name="com.example.vervetaskapp.ui.task.TaskFragment"
+        android:label="@string/Task"
+        tools:layout="@layout/fragment_task" >
+        <argument
+            android:name="task_id"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>
+

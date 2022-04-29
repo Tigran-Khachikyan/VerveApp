@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">VerveTaskApp</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="Project">Project</string>
+    <string name="Task">Task</string>
+    <string name="Add">Add</string>
+    <string name="add_new_project">Add new project</string>
+    <string name="title">Title</string>
+    <string name="submit">Submit</string>
+    <string name="description">Description</string>
+    <string name="send_to_qa">Send to QA</string>
+    <string name="add_new_task">Add new task</string>
+    <string name="no_project_found">No Project found</string>
+    <string name="no_task_found">No Task found</string>
+    <string name="created_at">Created at %1$s</string>
+    <string name="comments">Comments</string>
+    <string name="save_changes">Save changes</string>
+    <string name="add_new_comment">Add new comment</string>
+    <string name="comment">Comment</string>
+    <string name="tasks_of">Tasks of %1$s</string>
+</resources>
